@@ -1,0 +1,25 @@
+<div class="main posts-new" >
+  <div class="posts-top">
+    <h1 class="form-heading">妥協する</h1>
+    <%= form_tag("/posts/create") do %>
+      <div class="form">
+        <div class="form-body">
+          <p>妥協者名</p>
+          <input name="name">
+          <p>妥協タイトル</p>
+          <input name="title">
+          <p>妥協内容</p>
+          <textarea name="content"></textarea>
+        </div>
+        <div class="form-submit">  
+          <input type="submit" value="妥協する">
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <div class="form-index">
+    <%= link_to "一覧を見る", "/posts/index" %>
+  </div> 
+</div> 
+
+

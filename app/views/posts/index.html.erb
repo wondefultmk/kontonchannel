@@ -1,0 +1,16 @@
+<div class="main posts-index" >
+  <div class="posts-top">
+    <h3>妥協一覧</h3>
+    <% @posts.each do |post| %>
+      <div class="posts-index-item">
+        <h5>妥協<%= post.id %><h5>
+        <p class="post-index-sub">name</p>
+        <p class="post-index-main"><%= post.name %></p>
+        <p class="post-index-sub">title</p>
+        <p class="post-index-main"><%= post.title %></p>
+        <p class="post-index-content"><%= post.content %></p>
+        <p class="post-index-sub"><%= post.created_at %></p>
+      </div>
+    <% end %>
+  </div>
+</div>
